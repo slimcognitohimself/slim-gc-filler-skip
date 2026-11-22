@@ -1,0 +1,74 @@
+{
+  "format": 2,
+  "id": "rac2-filler-skip",
+  "name": "Filler skip",
+  "version": "0.3.2",
+  "author": "Slim Cognito",
+  "description": "Hold L1+R1 to skip the Endako Clank section, the Giant Clank battle at Dobbo and the split Aranos Prison sections; optional instant Electrolyzer and Infiltrator puzzles and a Yeedil Hypnomatic skip.",
+  "license": "MIT",
+  "type": "script",
+  "api": "1.1",
+  "scripts": [
+    "main.luau"
+  ],
+  "games": {
+    "rac2": [
+      "ntsc"
+    ]
+  },
+  "hooks": [],
+  "multiplayer": "solo",
+  "settings": [
+    {
+      "key": "hold_seconds",
+      "name": "Hold time",
+      "type": "int",
+      "default": 3,
+      "min": 1,
+      "max": 10,
+      "description": "Seconds to hold L1+R1 to skip a section."
+    },
+    {
+      "key": "endako",
+      "name": "Endako: Clank section",
+      "type": "bool",
+      "default": true,
+      "description": "Offer the skip while Clank is on his own on Endako."
+    },
+    {
+      "key": "dobbo",
+      "name": "Dobbo: Giant Clank (Dobbo Orbit)",
+      "type": "bool",
+      "default": true,
+      "description": "Offer the skip while walking up to the man who sends you to orbit."
+    },
+    {
+      "key": "aranos",
+      "name": "Aranos Prison: split sections",
+      "type": "bool",
+      "default": true,
+      "description": "Offer the skip in each Clank and Ratchet section until they are reunited."
+    },
+    {
+      "key": "instant_electrolyzer",
+      "name": "Instant Electrolyzer puzzles",
+      "type": "bool",
+      "default": false,
+      "description": "Using the Electrolyzer on a panel solves its puzzle at once."
+    },
+    {
+      "key": "instant_infiltrator",
+      "name": "Instant Infiltrator puzzles",
+      "type": "bool",
+      "default": false,
+      "description": "Using the Infiltrator on a lock solves its puzzle at once."
+    },
+    {
+      "key": "yeedil_hypnomatic_skip",
+      "name": "Yeedil Hypnomatic Skip",
+      "type": "bool",
+      "default": false,
+      "description": "Hold L1+R1 by the first Megacorp Vendor on the bridge to turn on the Swingshot targets, and by the large door to the teleporter to open it."
+    }
+  ]
+}
